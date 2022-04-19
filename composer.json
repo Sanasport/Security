@@ -12,7 +12,12 @@
         }
     ],
     "require": {
-        "php": "^7.1.0"
+        "php": "^7.1.0",
+        "arachne/service-collections": "^0.1.0 || ^0.2.0",
+        "nette/di": "*",
+        "nette/http": "*",
+        "nette/security": "*",
+        "nette/utils": "*"
     },
     "require-dev": {
         "arachne/codeception": "^0.8.0",
