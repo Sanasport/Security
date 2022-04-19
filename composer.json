@@ -25,10 +25,7 @@
         "eloquent/phony": "^3.0.0",
         "eloquent/phony-phpunit": "^4.0.0",
         "eloquent/phpstan-phony": "^0.3.0",
-        "friendsofphp/php-cs-fixer": "^2.8.0",
-        "phpstan/phpstan": "^0.10.1",
-        "phpstan/phpstan-nette": "^0.10.0",
-        "phpstan/phpstan-strict-rules": "^0.10.0"
+        "friendsofphp/php-cs-fixer": "^2.8.0"
     },
     "autoload": {
         "psr-4": {
