@@ -11,9 +11,15 @@
             "email": "enumag@gmail.com"
         }
     ],
+    "repositories": [
+		{
+			"type": "vcs",
+			"url": "git@github.com:Sanasport/ServiceCollections.git"
+		}
+    ],
     "require": {
         "php": ">=7.1.0",
-        "arachne/service-collections": "^0.1.0 || ^0.2.0",
+        "arachne/service-collections": "dev-nette-3.0",
         "nette/di": "*",
         "nette/http": "*",
         "nette/security": "*",
