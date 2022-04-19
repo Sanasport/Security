@@ -24,6 +24,9 @@ jobs:
       - name: "Checkout"
         uses: actions/checkout@v3
         
+      - name: "test"
+        uses: joelwmale/codeception-action@1.0.0
+        
       - name: "Tests"
         run: |
           composer update --dev --ignore-platform-reqs
