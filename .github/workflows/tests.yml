@@ -33,4 +33,6 @@ jobs:
         uses: joelwmale/codeception-action@1.0.0
         
       - name: "Tests"
-        run: vendor/bin/codecept run $*
+        run: |
+          php --version
+          vendor/bin/codecept run $*
