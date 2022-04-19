@@ -26,7 +26,5 @@ jobs:
         
       - name: "Tests"
         run: |
-          composer update --ignore-platform-reqs
-          composer dump-autoload
-          vendor/bin/codecept build
-          vendor/bin/codecept run unit
+          composer update --dev --ignore-platform-reqs
+          composer test
