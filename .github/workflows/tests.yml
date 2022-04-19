@@ -27,4 +27,5 @@ jobs:
         
       - name: "Tests"
         run: |
+          composer update
           composer test
