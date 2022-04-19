@@ -29,4 +29,4 @@ jobs:
       - name: "Tests"
         run: |
           composer install --ignore-platform-reqs
-          composer test
+          vendor/bin/codecept run unit
