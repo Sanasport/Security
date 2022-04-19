@@ -27,5 +27,4 @@ jobs:
         
       - name: "Tests"
         run: |
-          php vendor/bin/codecept build
-          php vendor/bin/codecept run
+          composer test
