@@ -1,0 +1,30 @@
+name: "Tests"
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  tests:
+    name: "Tests"
+    runs-on: ${{ matrix.operating-system }}
+    strategy:
+      matrix:
+        php-version:
+          - "7.4"
+          - "8.0"
+          - "8.1"
+        operating-system: [ubuntu-latest]
+        
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v3
+        
+      - name: "Install dependencies"
+        run: "composer update --no-interaction --no-progress --ignore-platform-reqs"
+        
+      - name: "Tests"
+        run: |
+          composer test
