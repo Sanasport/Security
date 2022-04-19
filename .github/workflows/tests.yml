@@ -33,6 +33,4 @@ jobs:
         uses: joelwmale/codeception-action@1.0.0
         
       - name: "Tests"
-        run: |
-          composer update --dev --ignore-platform-reqs
-          composer test
+        run: vendor/bin/codecept run $*
