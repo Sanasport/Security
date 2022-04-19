@@ -26,7 +26,13 @@ jobs:
         
       - name: "Install dependencies"
         run: "composer update --no-interaction --no-progress --ignore-platform-reqs"
-        
+      
+      - name: "Install PHP"
+        uses: "shivammathur/setup-php@v2"
+        with:
+          php-version: "${{ matrix.php-version }}"
+      
+          
       - name: "test2"
         run: vendor/bin/codecept build
       - name: "test"
