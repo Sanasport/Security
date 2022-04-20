@@ -30,7 +30,7 @@
         "codeception/codeception": "^4.1",
         "eloquent/phony": "^5.0",
         "eloquent/phony-phpunit": "^7.1",
-        "friendsofphp/php-cs-fixer": "^2.8.0",
+        "friendsofphp/php-cs-fixer": "^2.8.0"
     },
     "autoload": {
         "psr-4": {
