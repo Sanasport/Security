@@ -32,17 +32,17 @@ jobs:
           php-version: "${{ matrix.php-version }}"
         
       - name: "Install dependencies"
-        run: "composer update --ignore-platform-reqs"
+        run: "composer update"
       
       
       
           
       - name: "test2"
-        run: vendor/bin/codecept build
+        run: composer test
 #      - name: "test"
 #       uses: joelwmale/codeception-action@1.0.0
         
-      - name: "Tests"
-        run: |
-          php --version
-          vendor/bin/codecept run $*
+#     - name: "Tests"
+#        run: |
+#          php --version
+#          vendor/bin/codecept run $*
